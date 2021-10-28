@@ -1,0 +1,59 @@
+{
+  "addReminder": "Add reminder",
+  "@addReminder": {
+    "description": "adding a new reminder"
+  },
+  "cancelReminder": "Cancel",
+  "@cancelReminder": {
+    "description": "button to cancel the reminder"
+  },
+  "saveReminder": "Save",
+  "@saveReminder": {
+    "description": "button to save the reminder"
+  },
+  "whatReminder": "What?",
+  "@whatReminder": {
+    "description": "When the user is adding a new reminder, is asked what he wants to be remembered"
+  },
+  "whenReminder": "When?",
+  "@whenReminder": {
+    "description": "When the user is adding a new reminder, is asked when he wants to be remembered"
+  },
+  "errorFetchItems": "Error when fetching items",
+  "@errorFetchItems": {
+    "description": "When occurs an error by fetching items"
+  },
+  "addReminderSaved": "Reminder saved!",
+  "@addReminderSaved": {
+    "description": "When a reminder is saved it will show this message"
+  },
+  "addReminderNotSavedError": "Something went wrong! Please try again!",
+  "@addReminderNotSavedError": {
+    "description": "When there is an error while saving the reminder it will show an error"
+  },
+  "addReminderExample": "ex. Medical Appointment",
+  "@addReminderExample": {
+    "description": "Example of a reminder in the add reminder widget"
+  },
+  "addReminderNoName": "What do you want to remember?",
+  "@addReminderNoName": {
+    "description": "Reminder hint in the add reminder widget"
+  },
+  "addReminderDueDate": "Due Date",
+  "@addReminderDueDate": {
+    "description": "Due Date title in the add reminder widget"
+  },
+  "addReminderDueTime": "Due Time",
+  "@addReminderDueTime": {
+    "description": "Due Time title in the add reminder widget"
+  },
+  "bottomNavigationFuture": "Actual / Future",
+  "@bottomNavigationFuture": {
+    "description": "Bottom Navigation Future"
+  },
+  "bottomNavigationPast": "Past",
+  "@bottomNavigationPast": {
+    "description": "Bottom Navigation Past"
+  }
+}
+

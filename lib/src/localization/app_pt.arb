@@ -1,0 +1,58 @@
+{
+  "addReminder": "Adicionar lembrança",
+  "@addReminder": {
+    "description": "adicionar um novo lembrança"
+  },
+  "cancelReminder": "Cancelar",
+  "@cancelReminder": {
+    "description": "botão para cancelar o lembrança"
+  },
+  "saveReminder": "Guardar",
+  "@saveReminder": {
+    "description": "botão para guardar o lembrança"
+  },
+  "whatReminder": "O quê?",
+  "@whatReminder": {
+    "description": "Durante o adicionar lembrança é perguntado ao utilizador do que se quer lembrar?"
+  },
+  "whenReminder": "Quando será?",
+  "@whenReminder": {
+    "description": "Durante o adicionar lembrança é perguntado ao utilizador quando quer ser lembrado?"
+  },
+  "errorFetchItems": "Não foi possível buscar os items",
+  "@errorFetchItems": {
+    "description": "Quando houve um erro ao tentar ir buscar os items"
+  },
+  "addReminderSaved": "lembrança guardada!",
+  "@addReminderSaved": {
+    "description": "Mensagem apresentada ao utilizador apos a gravacao da lembrança"
+  },
+  "addReminderNotSavedError": "Alguma coisa se passou! Por favor tente outra vez!",
+  "@addReminderNotSavedError": {
+    "description": "Caso ocorra algum erro ao gravar a lembrança esta mensagem é mostrada ao utilizador"
+  },
+  "addReminderExample": "ex. Consulta",
+  "@addReminderExample": {
+    "description": "Exemplo de uma lembrança no add reminder widget"
+  },
+  "addReminderNoName": "Do que se quer lembrar?",
+  "@addReminderNoName": {
+    "description": "Hint para a lembrança no add reminder widget"
+  },
+  "addReminderDueDate": "Data",
+  "@addReminderDueDate": {
+    "description": "Titulo da Data no add reminder widget"
+  },
+  "addReminderDueTime": "Hora",
+  "@addReminderDueTime": {
+    "description": "Titulo da Hora no add reminder widget"
+  },
+  "bottomNavigationFuture": "Atuais / Futuras",
+  "@bottomNavigationFuture": {
+    "description": "Bottom Navigation Future"
+  },
+  "bottomNavigationPast": "Passadas",
+  "@bottomNavigationPast": {
+    "description": "Bottom Navigation Past"
+  }
+}
