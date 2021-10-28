@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:lembretes/src/features/home_view.dart';
+import 'package:lembretes/src/core/base_view.dart';
+import 'package:lembretes/src/features/home/home_view.dart';
+import 'package:lembretes/src/features/passed_lembretes/passed_lembretes_view.dart';
 
 
 /// The Widget that configures your application.
@@ -36,9 +38,16 @@ class LembretesApp extends StatelessWidget {
         Locale('en', ''), // English, no country code
       ],
 
-      initialRoute: HomeView.id,
+      theme: ThemeData(
+          primaryColor: const Color(0xffFFDB84),
+          scaffoldBackgroundColor: Colors.white
+      ),
+
+      initialRoute: BaseView.id,
       routes: {
+        BaseView.id: (context) => BaseView(),
         HomeView.id: (context) => const HomeView(),
+        PassedLembretesView.id: (context) => const PassedLembretesView(),
       }
     );
   }
