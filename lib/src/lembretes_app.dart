@@ -25,6 +25,8 @@ class LembretesApp extends StatelessWidget {
       // background.
       restorationScopeId: 'lembretesApp',
 
+      debugShowCheckedModeBanner: false,
+
       // Provide the generated AppLocalizations to the MaterialApp. This
       // allows descendant Widgets to display the correct translations
       // depending on the user's locale.
