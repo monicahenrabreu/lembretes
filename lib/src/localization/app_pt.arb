@@ -41,18 +41,18 @@
   },
   "addReminderDueDate": "Data",
   "@addReminderDueDate": {
-    "description": "Titulo da Data no add reminder widget"
+    "description": "Título da Data no add reminder widget"
   },
   "addReminderDueTime": "Hora",
   "@addReminderDueTime": {
-    "description": "Titulo da Hora no add reminder widget"
+    "description": "Título da Hora no add reminder widget"
   },
-  "bottomNavigationFuture": "Atuais / Futuras",
+  "bottomNavigationFuture": "Atuais / Futuros",
   "@bottomNavigationFuture": {
-    "description": "Bottom Navigation Future"
+    "description": "Botão de Navegação para o menu dos lembretes futuros"
   },
-  "bottomNavigationPast": "Passadas",
+  "bottomNavigationPast": "Passados",
   "@bottomNavigationPast": {
-    "description": "Bottom Navigation Past"
+    "description": "Botão de Navegação para o menu dos lembretes passados"
   }
 }

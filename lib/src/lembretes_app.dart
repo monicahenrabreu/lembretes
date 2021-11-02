@@ -38,6 +38,7 @@ class LembretesApp extends StatelessWidget {
       ],
       supportedLocales: const [
         Locale('en', ''), // English, no country code
+        Locale('pt', ''),
       ],
 
       theme: ThemeData(
