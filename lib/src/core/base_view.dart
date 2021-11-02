@@ -55,14 +55,14 @@ class _BaseViewState extends State<BaseView> {
           Icons.event,
           color: const Color(0xff544646),
         ),
-        label: AppLocalizations.of(context)?.bottomNavigationFuture,
+        label: AppLocalizations.of(context)!.bottomNavigationFuture,
       ),
       BottomNavigationBarItem(
         icon: const Icon(
           Icons.check,
           color: const Color(0xff544646),
         ),
-        label: AppLocalizations.of(context)?.bottomNavigationPast,
+        label: AppLocalizations.of(context)!.bottomNavigationPast,
       ),
     ];
   }
@@ -83,7 +83,8 @@ class _BaseViewState extends State<BaseView> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
+          elevation: 0,
+          backgroundColor: Colors.white,
           title: const Text(
             'Lembretes',
             style: TextStyle(color: Color(0xff544646)),

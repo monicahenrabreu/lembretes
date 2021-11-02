@@ -31,7 +31,7 @@
   "@addReminderNotSavedError": {
     "description": "When there is an error while saving the reminder it will show an error"
   },
-  "addReminderExample": "ex. Medical Appointment",
+  "addReminderExample": "ex. Nutricionist",
   "@addReminderExample": {
     "description": "Example of a reminder in the add reminder widget"
   },

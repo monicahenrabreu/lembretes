@@ -1,43 +1,43 @@
 {
-  "addReminder": "Adicionar lembrança",
+  "addReminder": "Adicionar lembrete",
   "@addReminder": {
-    "description": "adicionar um novo lembrança"
+    "description": "adicionar um novo lembrete"
   },
   "cancelReminder": "Cancelar",
   "@cancelReminder": {
-    "description": "botão para cancelar o lembrança"
+    "description": "botão para cancelar o lembrete"
   },
   "saveReminder": "Guardar",
   "@saveReminder": {
-    "description": "botão para guardar o lembrança"
+    "description": "botão para guardar o lembrete"
   },
   "whatReminder": "O quê?",
   "@whatReminder": {
-    "description": "Durante o adicionar lembrança é perguntado ao utilizador do que se quer lembrar?"
+    "description": "Ao adicionar lembrete é perguntado ao utilizador do que se quer lembrar?"
   },
   "whenReminder": "Quando será?",
   "@whenReminder": {
-    "description": "Durante o adicionar lembrança é perguntado ao utilizador quando quer ser lembrado?"
+    "description": "Ao adicionar lembrete é perguntado ao utilizador quando quer ser lembrado?"
   },
   "errorFetchItems": "Não foi possível buscar os items",
   "@errorFetchItems": {
     "description": "Quando houve um erro ao tentar ir buscar os items"
   },
-  "addReminderSaved": "lembrança guardada!",
+  "addReminderSaved": "lembrete guardado!",
   "@addReminderSaved": {
-    "description": "Mensagem apresentada ao utilizador apos a gravacao da lembrança"
+    "description": "Mensagem apresentada ao utilizador apos a gravação do lembrete"
   },
   "addReminderNotSavedError": "Alguma coisa se passou! Por favor tente outra vez!",
   "@addReminderNotSavedError": {
-    "description": "Caso ocorra algum erro ao gravar a lembrança esta mensagem é mostrada ao utilizador"
+    "description": "Caso ocorra algum erro ao gravar o lembrete esta mensagem é mostrada ao utilizador"
   },
-  "addReminderExample": "ex. Consulta",
+  "addReminderExample": "ex. Nutricionista",
   "@addReminderExample": {
-    "description": "Exemplo de uma lembrança no add reminder widget"
+    "description": "Exemplo de um lembrete no add reminder widget"
   },
   "addReminderNoName": "Do que se quer lembrar?",
   "@addReminderNoName": {
-    "description": "Hint para a lembrança no add reminder widget"
+    "description": "Hint para o lembrete no add reminder widget"
   },
   "addReminderDueDate": "Data",
   "@addReminderDueDate": {

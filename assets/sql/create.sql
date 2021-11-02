@@ -1,0 +1,1 @@
+CREATE TABLE Lembrete(id INTEGER PRIMARY KEY, name TEXT, quando INTEGER);
