@@ -23,10 +23,7 @@ class AddLembreteWidget extends StatefulWidget {
 class _AddLembreteWidgetState extends State<AddLembreteWidget> {
   final TextEditingController _controllerName = TextEditingController();
   late TextEditingController _dateTimePickerController;
-  //final _focusSenha = FocusNode();
   final _formKey = GlobalKey<FormState>();
-  late double _height;
-  late double _width;
   final DateFormat _dateTimeFormat = DateFormat('yyyy-MM-dd HH:mm');
 
   bool get _isEditMode => widget.isEditMode;
@@ -40,9 +37,6 @@ class _AddLembreteWidgetState extends State<AddLembreteWidget> {
 
   @override
   Widget build(BuildContext context) {
-    _height = MediaQuery.of(context).size.height / 4;
-    _width = MediaQuery.of(context).size.width;
-
     if(_isEditMode){
       _controllerName.text = _reminder!.name;
       _dateTimePickerController.text = _reminder!.quando.toString();
@@ -50,69 +44,59 @@ class _AddLembreteWidgetState extends State<AddLembreteWidget> {
 
     return Form(
       key: _formKey,
-      child: Container(
-        height: _height,
-        width: _width,
-        padding: const EdgeInsets.all(1),
-        child: Column(
-          children: [
-            TextWidget(
-              AppLocalizations.of(context)!.whatReminder,
-              AppLocalizations.of(context)!.addReminderExample,
-              controller: _controllerName,
-              //validator: _validateName,
-              keyboardType: TextInputType.name,
-              textInputAction: TextInputAction.next,
-              //nextFocus: _focusSenha,
+      child: Wrap(
+        alignment: WrapAlignment.start,
+        runSpacing: 20.0,
+        children: [
+          TextWidget(
+            AppLocalizations.of(context)!.whatReminder,
+            AppLocalizations.of(context)!.addReminderExample,
+            controller: _controllerName,
+            validator: _validateName,
+            keyboardType: TextInputType.name,
+            textInputAction: TextInputAction.next,
+          ),
+          DateTimePicker(
+            type: DateTimePickerType.dateTimeSeparate,
+            dateMask: 'd MMM yyyy',
+            controller: _dateTimePickerController,
+            firstDate: DateTime.now(),
+            lastDate: DateTime(2200),
+            icon: const Padding(
+              padding: EdgeInsets.fromLTRB(5.0, 4.0, 0.0, 1.0),
+              child: Icon(Icons.event),
             ),
-            const SizedBox(
-              height: 20,
-            ),
-            DateTimePicker(
-              type: DateTimePickerType.dateTimeSeparate,
-              dateMask: 'd MMM yyyy',
-              controller: _dateTimePickerController,
-              firstDate: DateTime.now(),
-              lastDate: DateTime(2200),
-              icon: const Padding(
-                padding: EdgeInsets.fromLTRB(5.0, 4.0, 0.0, 1.0),
-                child: Icon(Icons.event),
+            dateLabelText: AppLocalizations.of(context)!.addReminderDueDate,
+            timeLabelText: AppLocalizations.of(context)!.addReminderDueTime,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ElevatedButton(
+                child: Text(AppLocalizations.of(context)!.cancelReminder, style: const TextStyle(color: Colors.black),),
+                style: ElevatedButton.styleFrom(
+                  textStyle: const TextStyle(color: Colors.black, fontSize: 18),
+                  primary: Theme.of(context).primaryColor,
+                ),
+                onPressed: _onPressedCancel,
               ),
-              dateLabelText: AppLocalizations.of(context)!.addReminderDueDate,
-              timeLabelText: AppLocalizations.of(context)!.addReminderDueTime,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(
-                  child: Text(AppLocalizations.of(context)!.cancelReminder, style: const TextStyle(color: Colors.black),),
-                  style: ElevatedButton.styleFrom(
-                    textStyle: const TextStyle(color: Colors.black, fontSize: 18),
-                    primary: Theme.of(context).primaryColor,
-                  ),
-                  onPressed: _onPressedCancel,
+              ElevatedButton(
+                child: Text(AppLocalizations.of(context)!.saveReminder, style: const TextStyle(color: Colors.black),),
+                style: ElevatedButton.styleFrom(
+                  textStyle: const TextStyle(color: Colors.black, fontSize: 18),
+                  primary: Theme.of(context).primaryColor,
                 ),
-                ElevatedButton(
-                  child: Text(AppLocalizations.of(context)!.saveReminder, style: const TextStyle(color: Colors.black),),
-                  style: ElevatedButton.styleFrom(
-                    textStyle: const TextStyle(color: Colors.black, fontSize: 18),
-                    primary: Theme.of(context).primaryColor,
-                  ),
-                  onPressed: () => _onPressedSave(context),
-                ),
-              ],
-            ),
-          ],
-        ),
+                onPressed: () => _onPressedSave(context),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
 
-  String? _validateName(String text) {
-    if (text.isEmpty) {
+  String? _validateName(String? text) {
+    if (text == null || text.isEmpty) {
       return AppLocalizations.of(context)!.addReminderNoName;
     }
     return null;
