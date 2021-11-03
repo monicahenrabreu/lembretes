@@ -1,6 +1,11 @@
-# lembretes
+# Lembretes
 
-A new Flutter project.
+Lembretes is a Flutter project where you can save and see your reminders.
+Once you enter in the app it will be shown the Actual / Future reminders page.
+Here you will see all your actual and future reminders and it is also possible
+to create new reminders. The other page has the past reminders. The actual reminders
+(the reminders of the day) are on the Actual / Future reminders and in the next day the
+reminders are shown on the Past reminders page.
 
 ## Getting Started
 
