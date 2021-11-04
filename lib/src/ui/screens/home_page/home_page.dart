@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:lembretes/src/widgets/add_lembrete_widget.dart';
+import 'package:lembretes/src/ui/widgets/add_lembrete_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:lembretes/src/db/db_helper.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:lembretes/src/models/lembrete_model.dart';
 import 'package:lembretes/src/provider/lembretes_provider.dart';
-import 'package:lembretes/src/widgets/lembrete_list_widget.dart';
+import 'package:lembretes/src/ui/widgets/lembrete_list_widget.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   static String id = 'home';
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomeViewState extends State<HomeView> {
+class _HomePageState extends State<HomePage> {
 
   late List<LembreteModel> _list;
 

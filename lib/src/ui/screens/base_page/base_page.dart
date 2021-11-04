@@ -1,22 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:lembretes/src/features/home/home_view.dart';
-import 'package:lembretes/src/features/passed_lembretes/passed_lembretes_view.dart';
+import 'package:lembretes/src/ui/screens/home_page/home_page.dart';
+import 'package:lembretes/src/ui/screens/past_lembretes_page/past_lembretes_page.dart';
 
-class BaseView extends StatefulWidget {
+class BasePage extends StatefulWidget {
 
   static String id = 'base';
 
   @override
-  _BaseViewState createState() => _BaseViewState();
+  _BasePageState createState() => _BasePageState();
 }
 
-class _BaseViewState extends State<BaseView> {
+class _BasePageState extends State<BasePage> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    const HomeView(),
-    const PassedLembretesView(),
+    const HomePage(),
+    const PastLembretesPage()
   ];
 
   PageController pageController = PageController(
@@ -60,7 +60,7 @@ class _BaseViewState extends State<BaseView> {
       BottomNavigationBarItem(
         icon: const Icon(
           Icons.check,
-          color: const Color(0xff544646),
+          color: Color(0xff544646),
         ),
         label: AppLocalizations.of(context)!.bottomNavigationPast,
       ),

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:lembretes/src/widgets/lembrete_list_widget.dart';
+import 'package:lembretes/src/ui/widgets/lembrete_list_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:lembretes/src/models/lembrete_model.dart';
 import 'package:lembretes/src/provider/lembretes_provider.dart';
 
-class PassedLembretesView extends StatefulWidget {
-  const PassedLembretesView({Key? key}) : super(key: key);
+class PastLembretesPage extends StatefulWidget {
+  const PastLembretesPage({Key? key}) : super(key: key);
 
   static String id = 'passed_lembretes';
 
   @override
-  State<PassedLembretesView> createState() => _PassedLembretesViewState();
+  State<PastLembretesPage> createState() => _PastLembretesPageState();
 }
 
-class _PassedLembretesViewState extends State<PassedLembretesView> {
+class _PastLembretesPageState extends State<PastLembretesPage> {
   late List<LembreteModel> _list;
 
   @override

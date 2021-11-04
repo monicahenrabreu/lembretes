@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lembretes/src/models/lembrete_model.dart';
-import 'package:lembretes/src/widgets/lembrete_card.dart';
+import 'package:lembretes/src/ui/widgets/lembrete_card.dart';
 
 class LembreteListWidget extends StatefulWidget {
 
