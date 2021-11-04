@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:lembretes/src/ui/screens/home_page/home_page.dart';
-import 'package:lembretes/src/ui/screens/past_lembretes_page/past_lembretes_page.dart';
+import 'package:lembretes/ui/screens/home_page/home_page.dart';
+import 'package:lembretes/ui/screens/past_lembretes_page/past_lembretes_page.dart';
 
 class BasePage extends StatefulWidget {
 

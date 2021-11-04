@@ -1,5 +1,5 @@
-import 'package:lembretes/src/db/lembrete_entity.dart';
-import 'package:lembretes/src/db/base_dao.dart';
+import 'package:lembretes/db/lembrete_entity.dart';
+import 'package:lembretes/db/base_dao.dart';
 
 // Data Access Object
 class LembreteDAO extends BaseDAO<LembreteEntity> {

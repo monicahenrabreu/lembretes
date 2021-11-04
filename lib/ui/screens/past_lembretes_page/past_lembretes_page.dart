@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lembretes/src/ui/widgets/lembrete_list_widget.dart';
+import 'package:lembretes/ui/widgets/lembrete_list_widget.dart';
 import 'package:provider/provider.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
-import 'package:lembretes/src/provider/lembretes_provider.dart';
+import 'package:lembretes/models/lembrete_model.dart';
+import 'package:lembretes/provider/lembretes_provider.dart';
 
 class PastLembretesPage extends StatefulWidget {
   const PastLembretesPage({Key? key}) : super(key: key);

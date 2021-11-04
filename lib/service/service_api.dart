@@ -1,6 +1,6 @@
-import 'package:lembretes/src/db/lembrete_entity.dart';
-import 'package:lembretes/src/db/lembrete_dao.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
+import 'package:lembretes/db/lembrete_entity.dart';
+import 'package:lembretes/db/lembrete_dao.dart';
+import 'package:lembretes/models/lembrete_model.dart';
 
 class ServiceApi {
 

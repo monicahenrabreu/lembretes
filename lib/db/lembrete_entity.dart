@@ -1,4 +1,4 @@
-import 'package:lembretes/src/db/entity.dart';
+import 'package:lembretes/db/entity.dart';
 
 class LembreteEntity extends Entity {
   late int id;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
-import 'package:lembretes/src/service/service_api.dart';
+import 'package:lembretes/models/lembrete_model.dart';
+import 'package:lembretes/service/service_api.dart';
 
 class LembretesProvider with ChangeNotifier{
 

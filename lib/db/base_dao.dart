@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:lembretes/src/db/db_helper.dart';
-import 'package:lembretes/src/db/entity.dart';
+import 'package:lembretes/db/db_helper.dart';
+import 'package:lembretes/db/entity.dart';
 import 'package:sqflite/sqflite.dart';
 
 // Data Access Object

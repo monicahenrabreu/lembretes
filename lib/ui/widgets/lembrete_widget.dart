@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
+import 'package:lembretes/models/lembrete_model.dart';
 
 class LembreteWidget extends StatelessWidget {
 

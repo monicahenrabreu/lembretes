@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
-import 'package:lembretes/src/provider/lembretes_provider.dart';
-import 'package:lembretes/src/ui/widgets/text_widget.dart';
+import 'package:lembretes/models/lembrete_model.dart';
+import 'package:lembretes/provider/lembretes_provider.dart';
+import 'package:lembretes/ui/widgets/text_widget.dart';
 
 class AddLembreteWidget extends StatefulWidget {
   bool isEditMode;

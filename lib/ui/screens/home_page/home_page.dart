@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lembretes/src/ui/widgets/add_lembrete_widget.dart';
+import 'package:lembretes/ui/widgets/add_lembrete_widget.dart';
 import 'package:provider/provider.dart';
-import 'package:lembretes/src/db/db_helper.dart';
+import 'package:lembretes/db/db_helper.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:lembretes/src/models/lembrete_model.dart';
-import 'package:lembretes/src/provider/lembretes_provider.dart';
-import 'package:lembretes/src/ui/widgets/lembrete_list_widget.dart';
+import 'package:lembretes/models/lembrete_model.dart';
+import 'package:lembretes/provider/lembretes_provider.dart';
+import 'package:lembretes/ui/widgets/lembrete_list_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
