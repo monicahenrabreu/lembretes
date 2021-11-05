@@ -32,7 +32,7 @@ apps](https://flutter.dev/docs/development/accessibility-and-localization/intern
 
 ## Theme
 
-This app has a light and a dark theme.
+This app has a light and a dark theme accordingly with the system theme mode.
 
 ## State Management
 
