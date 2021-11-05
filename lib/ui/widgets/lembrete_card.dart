@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lembretes/models/lembrete_model.dart';
+import 'package:lembretes/ui/widgets/add_lembrete_widget.dart';
 import 'package:lembretes/ui/widgets/lembrete_widget.dart';
 
 class LembreteWidgetCard extends StatelessWidget {
@@ -28,7 +29,7 @@ class LembreteWidgetCard extends StatelessWidget {
           data: Theme.of(context).copyWith(dialogBackgroundColor: const Color(0xFFf7f7f7),),
           child:  AlertDialog(
             title: Text(lembreteModel.name),
-            content: const Text('onClick'),
+            content: AddLembreteWidget(isEditMode: true, lembreteModel: lembreteModel),
           )),
     );
   }
