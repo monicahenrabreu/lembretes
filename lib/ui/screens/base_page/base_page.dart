@@ -51,16 +51,16 @@ class _BasePageState extends State<BasePage> {
   List<BottomNavigationBarItem> _buildBottomNavBarItems() {
     return [
       BottomNavigationBarItem(
-        icon: const Icon(
+        icon: Icon(
           Icons.event,
-          color: const Color(0xff544646),
+          color: Theme.of(context).colorScheme.primary,
         ),
         label: AppLocalizations.of(context)!.bottomNavigationFuture,
       ),
       BottomNavigationBarItem(
-        icon: const Icon(
+        icon: Icon(
           Icons.check,
-          color: Color(0xff544646),
+          color: Theme.of(context).colorScheme.primary,
         ),
         label: AppLocalizations.of(context)!.bottomNavigationPast,
       ),
@@ -72,9 +72,9 @@ class _BasePageState extends State<BasePage> {
       backgroundColor: Theme.of(context).primaryColor,
       items: _buildBottomNavBarItems(),
       currentIndex: _selectedIndex,
-      selectedItemColor: const Color(0xff544646),
+      selectedItemColor: Theme.of(context).colorScheme.primary,
       selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
-      unselectedItemColor: const Color(0xff544646),
+      unselectedItemColor: Theme.of(context).colorScheme.primary,
       onTap: _onItemTapped,
     );
   }
@@ -84,10 +84,10 @@ class _BasePageState extends State<BasePage> {
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.white,
-          title: const Text(
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          title: Text(
             'Lembretes',
-            style: TextStyle(color: Color(0xff544646)),
+            style: Theme.of(context).textTheme.bodyText2,
           ),
           centerTitle: true,
         ),

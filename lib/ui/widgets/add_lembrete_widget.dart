@@ -72,17 +72,17 @@ class _AddLembreteWidgetState extends State<AddLembreteWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ElevatedButton(
-                child: Text(AppLocalizations.of(context)!.cancelReminder, style: const TextStyle(color: Colors.black),),
+                child: Text(AppLocalizations.of(context)!.cancelReminder, style: Theme.of(context).textTheme.bodyText1,),
                 style: ElevatedButton.styleFrom(
-                  textStyle: const TextStyle(color: Colors.black, fontSize: 18),
+                  textStyle: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 18),
                   primary: Theme.of(context).primaryColor,
                 ),
                 onPressed: _onPressedCancel,
               ),
               ElevatedButton(
-                child: Text(AppLocalizations.of(context)!.saveReminder, style: const TextStyle(color: Colors.black),),
+                child: Text(AppLocalizations.of(context)!.saveReminder, style: Theme.of(context).textTheme.bodyText1,),
                 style: ElevatedButton.styleFrom(
-                  textStyle: const TextStyle(color: Colors.black, fontSize: 18),
+                  textStyle: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 18),
                   primary: Theme.of(context).primaryColor,
                 ),
                 onPressed: () => _onPressedSave(context),

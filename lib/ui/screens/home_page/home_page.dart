@@ -33,12 +33,12 @@ class _HomePageState extends State<HomePage> {
     _list = context.watch<LembretesProvider>().lembreteListFuture;
 
     return Scaffold(
-      body: _list == null ? const CircularProgressIndicator() : LembreteListWidget(_list),
+      body: LembreteListWidget(_list),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           _showAddLembreteDialog();
         },
-        child: const Icon(Icons.add, color: Colors.black,),
+        child: Icon(Icons.add, color: Theme.of(context).colorScheme.primary,),
         backgroundColor: Theme.of(context).primaryColor,
       )
     );
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
         builder: (_) => Theme(
             data: Theme.of(context).copyWith(dialogBackgroundColor: const Color(0xFFf7f7f7),),
             child:  AlertDialog(
-              title: Text(AppLocalizations.of(context)!.addReminder),
+              title: Text(AppLocalizations.of(context)!.addReminder, style: Theme.of(context).textTheme.bodyText1,),
               content: AddLembreteWidget(),
             )));
   }

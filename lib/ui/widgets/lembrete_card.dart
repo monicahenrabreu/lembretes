@@ -12,7 +12,7 @@ class LembreteWidgetCard extends StatelessWidget {
     return GestureDetector(
       child: Container(
         child: Card(
-          color: const Color(0xffFFDB84),
+          color: Theme.of(context).cardColor,
           child: LembreteWidget(lembreteModel: lembreteModel,),
         ),
         /*decoration: const BoxDecoration(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lembretes/lembretes_app.dart';
 import 'package:lembretes/provider/lembretes_provider.dart';
 import 'package:provider/provider.dart';
-import 'lembretes_app.dart';
 
 void main() async {
   runApp(MultiProvider(
@@ -10,6 +10,6 @@ void main() async {
         create: (_) => LembretesProvider(),
       ),
     ],
-    child: const LembretesApp(),
-  ));
+    child: const LembretesApp()),
+  );
 }

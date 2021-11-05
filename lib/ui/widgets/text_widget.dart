@@ -38,7 +38,7 @@ class TextWidget extends StatelessWidget {
           FocusScope.of(context).requestFocus(nextFocus);
         }
       },
-      style: const TextStyle(fontSize: 18, color: Colors.black),
+      style: Theme.of(context).textTheme.bodyText2,
       decoration: InputDecoration(
         labelText: label,
         labelStyle: const TextStyle(fontSize: 18, color: Colors.grey),
@@ -46,8 +46,8 @@ class TextWidget extends StatelessWidget {
         hintStyle: const TextStyle(color: Colors.grey),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(25.0),
-          borderSide: const BorderSide(
-            color: Color(0xffFFDB84),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
         border: OutlineInputBorder(
