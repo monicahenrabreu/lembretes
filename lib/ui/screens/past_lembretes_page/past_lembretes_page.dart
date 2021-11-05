@@ -27,7 +27,7 @@ class _PastLembretesPageState extends State<PastLembretesPage> {
     _list = context.watch<LembretesProvider>().lembreteListChecked;
 
     return Scaffold(
-        body: _list == null ? const CircularProgressIndicator() : LembreteListWidget(_list),
+        body: LembreteListWidget(_list),
     );
   }
 }
