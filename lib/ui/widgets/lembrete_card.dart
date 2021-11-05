@@ -10,19 +10,9 @@ class LembreteWidgetCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      child: Container(
-        child: Card(
-          color: Theme.of(context).cardColor,
-          child: LembreteWidget(lembreteModel: lembreteModel,),
-        ),
-        /*decoration: const BoxDecoration(
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey,
-              blurRadius: 5.0,
-            ),
-          ],
-        ),*/
+      child: Card(
+        color: Theme.of(context).cardColor,
+        child: LembreteWidget(lembreteModel: lembreteModel,),
       ),
       onTap: () => _onClickItem(
         lembreteModel,
