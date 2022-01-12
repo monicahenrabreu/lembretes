@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class LembretesThemes {
   static final darkTheme = ThemeData(
-    primaryColorDark: const Color(0xff2c281d),
-    scaffoldBackgroundColor: Colors.black,
+    primaryColorDark: const Color(0xff424242),
+    scaffoldBackgroundColor: const Color(0xff121212),//Colors.black,
     colorScheme: const ColorScheme.dark(
       primary: Colors.white,
       secondary: Colors.white,
     ),
-    cardColor: const Color(0xff2c281d),
+    cardColor: const Color(0xff424242),
     textTheme: const TextTheme(
       bodyText1: TextStyle(
         color: Colors.white,

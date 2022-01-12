@@ -11,15 +11,8 @@ Once you enter in the app it will be shown the **Actual / Future reminders** pag
 The actual reminders (the reminders of the day) are on the Actual / Future reminders and in the next day the
 reminders are shown on the Past reminders page.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-For help getting started with Flutter, view 
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## Localization
+## What is used
+### Localization
 
 This project generates localized messages based on arb files found in
 the `lib/localization` directory.
@@ -30,14 +23,18 @@ To support additional languages, please visit the tutorial on
 [Internationalizing Flutter
 apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
 
-## Theme
+### Theme
 
 This app has a light and a dark theme accordingly with the system theme mode.
 
-## State Management
+### State Management
 
 In order to manage the state inside this app is used the [Provider](https://pub.dev/packages/provider).
 
-## Data Base
+### Data Base
 
 To save the reminders, it was used [SQLite](https://pub.dev/packages/sqflite).
+
+
+## Quick overview
+![](./assets/images/lembretes_app.gif)
